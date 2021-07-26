@@ -5,13 +5,13 @@ format: jb-book
 root: intro
 parts:
 - caption: choosing Experiment sequence
-    chapters:
-    - file: Meta-task
-  - caption: Use Cases
-    chapters:
-    - file: Use_Case_1_Committing_Numerical_Data_to_Database
-    - file: Use_Case_2_Plotting_and_Reviewing_the_Numerical_Results
-    - file: Use_Case_4_Querying_Numerical_Data_from_Database
-    - file: Use_Case_5.1_preparing_input_for_calibration
-    - file: Use_Case_5.2_Start_Run_and_check_calibration
-    - file: Use_Case_5.3_Commit_calibration_results_to_the_DB
+  chapters:
+  - file: Meta-task
+- caption: Use Cases
+  chapters:
+  - file: Use_Case_1_Committing_Numerical_Data_to_Database
+  - file: Use_Case_2_Plotting_and_Reviewing_the_Numerical_Results
+  - file: Use_Case_4_Querying_Numerical_Data_from_Database
+  - file: Use_Case_5.1_preparing_input_for_calibration
+  - file: Use_Case_5.2_Start_Run_and_check_calibration
+  - file: Use_Case_5.3_Commit_calibration_results_to_the_DB

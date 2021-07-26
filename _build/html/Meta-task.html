@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta-task &#8212; Calibration Workflow Environment</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Use Case 1 - Committing Numerical Data to Database (from a Simulation)" href="Use_Case_1_Committing_Numerical_Data_to_Database.html" />
+    <link rel="prev" title="Developing a Workflow tool for calibration of DEM models" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/caliperlogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Calibration Workflow Environment</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Developing a Workflow tool for calibration of DEM models
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  choosing Experiment sequence
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Meta-task
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Use Cases
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Use_Case_1_Committing_Numerical_Data_to_Database.html">
+   Use Case 1 - Committing Numerical Data to Database (from a Simulation)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Use_Case_2_Plotting_and_Reviewing_the_Numerical_Results.html">
+   Use Case 2 - Plotting and reviewing the numerical results from a database entry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Use_Case_4_Querying_Numerical_Data_from_Database.html">
+   Use Case 4 - Querying numerical data from  data base
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Use_Case_5.1_preparing_input_for_calibration.html">
+   Use Case 5.1 - Preparing Input for Calibration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Use_Case_5.2_Start_Run_and_check_calibration.html">
+   Use Case 5.2 - Start, Run and Check the Calibration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Use_Case_5.3_Commit_calibration_results_to_the_DB.html">
+   Use Case 5.3 - Commit Calibration Results to the DB
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Meta-task.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-comprehensive-approach-by-coetzee-et-al-and-katterfeld-et-al-to-calibrate-dem-parameters-for-cohesionless-materials">
+   A comprehensive approach: by Coetzee et al. and Katterfeld et al. to calibrate DEM parameters for cohesionless materials
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-size-and-shape">
+     1. Particle size and shape
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-measure-coefficient-of-restitution">
+     2. Select/measure coefficient of restitution
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-wall-friction-coefficient">
+     3. Particle-wall friction coefficient
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-stiffness-calibration">
+     4. Particle stiffness calibration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-density-calibration">
+     5. Particle density calibration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-particle-friction-coefficient-calibration">
+     6. Particle-particle friction coefficient Calibration
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-direct-shear-test">
+       Using direct shear test
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-angle-of-response-aor">
+       Using angle of response (AoR)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-bulk-density">
+     7. Check bulk density
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-fully-automated-calibration-workflow-for-dem-models-of-cohesive-powders-by-orefice-et-al">
+   A fully-automated calibration workflow for DEM models of cohesive powders by Orefice et al.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#experimental-devices">
+     Experimental devices:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ft4-powder-rheometer-to-do-compression-and-shear-tests">
+       FT4 powder rheometer (to do compression and shear tests)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-the-value-of-measured-estimated-parameters">
+   Specifying the value of measured/estimated parameters:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-shape-is-assumed-to-be-perfectly-spherical">
+     Particle
+     <strong>
+      shape
+     </strong>
+     is assumed to be perfectly spherical
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#performing-laboratory-tests">
+   Performing laboratory tests
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#angle-of-repose-aor">
+     <strong>
+      Angle of repose (AoR)
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#numerical-calibration-workflow">
+   Numerical calibration workflow
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#angle-of-response">
+     1. Angle of response
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#due-to-the-jamming-the-funnel-by-the-very-cohesive-powder-the-aor-is-numerically-modeled-by-the-draw-down-test-and-the-discrepancies-are-prevented-by-re-calibrating-the-friction-coefficient-in-the-shear-test-it-should-be-noted-that-performing-this-step-to-calculate-a-primary-value-for-the-friction-coefficients-is-crucial-since-it-affects-the-compression-test">
+       Due to the jamming the funnel by the very cohesive powder, the AoR is numerically modeled by the
+       <strong>
+        draw down test
+       </strong>
+       and the discrepancies are prevented by re-calibrating the friction coefficient in the shear test. It should be noted that performing this step to calculate a primary value for the friction coefficients is crucial since it affects the compression test.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#initialization">
+       1.1. Initialization:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aor-calibration-of-sliding-and-rolling-friction-coefficient-and-cohesion-stiffness">
+       1.2. AoR (Calibration of sliding and rolling friction coefficient and cohesion stiffness)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#powder-rheometer">
+     2. Powder rheometer
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#uniaxial-compression-test-calibration-of-plastic-stiffness">
+       2.1 Uniaxial compression test (Calibration of plastic stiffness)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shear-test-re-calibration-of-the-sliding-friction-coefficient-and-cohesion-stiffness">
+       2.2 Shear test (Re-calibration of the sliding friction coefficient and cohesion stiffness)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="meta-task">
+<h1>Meta-task<a class="headerlink" href="#meta-task" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-comprehensive-approach-by-coetzee-et-al-and-katterfeld-et-al-to-calibrate-dem-parameters-for-cohesionless-materials">
+<h2>A comprehensive approach: by <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0032591017300268">Coetzee et al.</a> and <a class="reference external" href="https://www.researchgate.net/profile/Andre_Katterfeld/publication/334129169_Calibration_of_DEM_Parameters_for_Cohesionless_Bulk_Materials_under_Rapid_Flow_Conditions_and_Low_Consolidation/links/5d26670792851cf440789112/Calibration-of-DEM-Parameters-for-Cohesionless-Bulk-Materials-under-Rapid-Flow-Conditions-and-Low-Consolidation.pdf">Katterfeld et al.</a> to calibrate DEM parameters for cohesionless materials<a class="headerlink" href="#a-comprehensive-approach-by-coetzee-et-al-and-katterfeld-et-al-to-calibrate-dem-parameters-for-cohesionless-materials" title="Permalink to this headline">¶</a></h2>
+<p>This is a calibration workflow that executes simulations in a specific order to isolate certain parameters.</p>
+<div class="section" id="particle-size-and-shape">
+<h3>1. Particle size and shape<a class="headerlink" href="#particle-size-and-shape" title="Permalink to this headline">¶</a></h3>
+<p>Select a model for the particle <strong>shape</strong>.</p>
+<ul class="simple">
+<li><p>Using a single sphere.</p></li>
+<li><p>Using <em>clumps</em>/<em>Multi-spheres</em> -one can use optimization software to create clumps after scanning particles, to most accurately represent particle size and shape-.</p></li>
+<li><p>By special mathematical descriptions of non-spherical particles:</p>
+<ul>
+<li><p>using superquadric equations</p></li>
+<li><p>polyhedrons</p></li>
+<li><p>faceted particles (e.g., created from imported STL models)</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p><strong>Note</strong>: The particle shape will influence all the other calibrated values, and if the adjusted shape is changed, the calibrated values should all be re-calibrated.</p>
+</div></blockquote>
+<p>The particle <strong>size</strong> distribution, should be specified based on the application, computation power, size of calibration experiments as well as the time constraints.</p>
+<blockquote>
+<div><p><strong>Note</strong>: The particle size and shape affects the packing porosity and consequently the bulk density.</p>
+</div></blockquote>
+</div>
+<div class="section" id="select-measure-coefficient-of-restitution">
+<h3>2. Select/measure coefficient of restitution<a class="headerlink" href="#select-measure-coefficient-of-restitution" title="Permalink to this headline">¶</a></h3>
+<p>It can be measured by <strong>drop tests</strong>. Since a stream of bulk materials usually show a rather strong damping behavior, selecting a value between 0.2-0.4 will reduce the parameters to be calibrated.</p>
+<blockquote>
+<div><p><strong>Note</strong>: This should be done for each type of contact/material.</p>
+</div></blockquote>
+</div>
+<div class="section" id="particle-wall-friction-coefficient">
+<h3>3. Particle-wall friction coefficient<a class="headerlink" href="#particle-wall-friction-coefficient" title="Permalink to this headline">¶</a></h3>
+<p>In this calibration method, sliding and rolling friction (rolling for spherical particles) are simply measured by an <strong>inclined plane test</strong> or <strong>wall shear test</strong>.</p>
+<blockquote>
+<div><p><strong>Note</strong>: the still not calibrated parameters -especially <strong>particle density</strong> and <strong>particle-particle friction</strong> should have realistic values.</p>
+</div></blockquote>
+</div>
+<div class="section" id="particle-stiffness-calibration">
+<h3>4. Particle stiffness calibration<a class="headerlink" href="#particle-stiffness-calibration" title="Permalink to this headline">¶</a></h3>
+<p>Particle stiffness calibration is performed by performing an <strong>uniaxial compression test</strong>.</p>
+<p>The relation between <em>the particle stiffness</em> and <em>the bulk stiffness</em> is linear, and using <strong>interpolation</strong> the particle stiffness that results in the measured bulk stiffness can be determined.</p>
+<p>The contact stiffness highly affects the time step: the higher the stiffness, the smaller the time step. As a result many DEM simulations use a reduced stiffness:</p>
+<blockquote>
+<div><p><strong>Hint</strong>:</p>
+<ul class="simple">
+<li><p>For the <em><strong>Hertz-Mindlin</strong></em> contact model, realistic bulk flow results can often be achieved using relatively low values for Young’s modulus, starting at 1e7 Pa and calibration is not necessary and often not performed.</p></li>
+<li><p>With the <em><strong>linear</strong></em> contact model, a lower-end contact stiffness would be in the order of 1e4 N/m.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="particle-density-calibration">
+<h3>5. Particle density calibration<a class="headerlink" href="#particle-density-calibration" title="Permalink to this headline">¶</a></h3>
+<p>It is done by filling a container with numerical particles and changing the particle density iteratively to achieve the desired bulk density. The relationship is linear and it only takes 3-4 iterations. The particle density highly influences the time step and flowability.</p>
+<blockquote>
+<div><p><strong>Note:</strong> Make sure that the system reaches static equilibrium after each change in density.</p>
+</div></blockquote>
+</div>
+<div class="section" id="particle-particle-friction-coefficient-calibration">
+<h3>6. Particle-particle friction coefficient Calibration<a class="headerlink" href="#particle-particle-friction-coefficient-calibration" title="Permalink to this headline">¶</a></h3>
+<p>It cannot be directly measured. And among the other parameters particle-particle friction has to compensate the idealization made for particle size and shape for computational efficiency. Researchers have used many experiments such as <strong>angle of repose</strong>, <strong>discharge test</strong>, <strong>draw down test</strong> and <strong>direct shear test</strong>.</p>
+<div class="section" id="using-direct-shear-test">
+<h4>Using direct shear test<a class="headerlink" href="#using-direct-shear-test" title="Permalink to this headline">¶</a></h4>
+<p><em>The bulk friction</em> increases non-linearly with an increase in <em>particle-particle friction coefficient</em> and reaches an asymptotic value at higher friction coefficients. It can be obtained by using <strong>interpolation</strong>.</p>
+</div>
+<div class="section" id="using-angle-of-response-aor">
+<h4>Using angle of response (AoR)<a class="headerlink" href="#using-angle-of-response-aor" title="Permalink to this headline">¶</a></h4>
+<p>If direct shear test is weather not available or not applicable, the angle of repose test can be used alternatively.</p>
+<p>This is almost a standard method for particle-particle <strong>sliding</strong> and <strong>rolling friction coefficients</strong> (rolling for spherical particles) calibration.</p>
+<p><em>The angle of repose</em> also increases non-linearly with an increase in friction coefficient, reaching an asymptotic value with higher friction coefficients. <strong>Interpolate</strong> for the coefficient of friction that results in an angle of repose within the range of the experimental value.</p>
+<blockquote>
+<div><p><strong>Note:</strong> It is reported that for the same system the angle of repose reached an asymptotic value at lower friction coefficients in comparison to the direct shear test. Therefore it is recommended that for <strong>materials with relatively high levels of friction -above 0.3-</strong> to use <strong>direct shear test</strong> to calibrate the particle-particle coefficient.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Hint</strong>: It is recommended that for non-spherical particles at least one and for spherical particles at least two experiment/measure to be used -<em>the more experiments are conducted the more accurate results are achieved</em>-.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The drop down test as well as the direct shear test deliver four results. However, not all of the test results can be called independent. For instance, the two AoR results and the remaining mass in the upper or lower chamber of the drop down test are depending on each other. The higher the AoR in the upper chamber, the higher the remaining mass here. In the direct shear test the shear response at different normal stresses can be used, as well as the internal friction angle and the time to reach failure.</p></li>
+<li><p>The problem of superimposing different test results is that in all cases an intersection of the result isolines cannot be reached. considering the measurement error can reduce the possible parameter combinations. Optimization algorithms can also be used to reduce computational time.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="check-bulk-density">
+<h3>7. Check bulk density<a class="headerlink" href="#check-bulk-density" title="Permalink to this headline">¶</a></h3>
+<p>The bulk density can be influenced by the particle-particle friction coefficient and the rolling friction coefficient, therefore the calibration of the density should be revisited after these friction coefficients were calibrated (by iterating between steps 5 and 6).</p>
+</div>
+</div>
+<div class="section" id="a-fully-automated-calibration-workflow-for-dem-models-of-cohesive-powders-by-orefice-et-al">
+<h2>A fully-automated calibration workflow for DEM models of cohesive powders by <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0032591019310137">Orefice et al.</a><a class="headerlink" href="#a-fully-automated-calibration-workflow-for-dem-models-of-cohesive-powders-by-orefice-et-al" title="Permalink to this headline">¶</a></h2>
+<p>This is a new automatized calibration method of DEM parameters to model particles ranging from very cohesive powders -exhibiting plastic compressibility of up tp 25%- to free-flowing particles. Since this study aimed to develop a calibration process for industrial-scale pharmaceutical processes where population of particles is &gt;10e6, it focuses on systems of <strong>single-component spherical</strong> powders to reduce computational costs. Moreover, it is developed to use routine small-scale experiments in order to use only small amount of expensive materials available.</p>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li></li>
+<li><p>DEM model using:</p>
+<ul>
+<li><p>linear spring-dashpot contact model</p></li>
+<li><p>rolling resistance model presented by <a class="reference external" href="https://link.springer.com/article/10.1007%2Fs10035-008-0099-x">Luding</a></p></li>
+<li><p>interaction law: adhesive <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0032591019310137">elasto-plastic model</a> which takes into account the hysteretic attractive force upon collision</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="experimental-devices">
+<h3>Experimental devices:<a class="headerlink" href="#experimental-devices" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>An angle of repose (AoR) tester</p></li>
+<li></li>
+</ol>
+<div class="section" id="ft4-powder-rheometer-to-do-compression-and-shear-tests">
+<h4>FT4 powder rheometer (to do compression and shear tests)<a class="headerlink" href="#ft4-powder-rheometer-to-do-compression-and-shear-tests" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<blockquote>
+<div><p><strong>Note</strong>: It should be noted that granular materials have an intrinsic hysteretic nature -so for instance, they might have different behavior after each compression cycle, the pressure should be measured subsequently-.</p>
+</div></blockquote>
+</div>
+<div class="section" id="specifying-the-value-of-measured-estimated-parameters">
+<h2>Specifying the value of measured/estimated parameters:<a class="headerlink" href="#specifying-the-value-of-measured-estimated-parameters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li></li>
+<li><p>Particle <strong>size</strong> follows a uniform distribution of mean r and extrema r ± 10% (particle average size is chosen to be the highest possible to limit the simulation time, provided the particles to be small enough to prevent the system from exhibiting finite-size effects). This can be done by specific set of simulation prior to calibration.</p></li>
+<li><p>The <strong>total number of particles</strong> is determined by the average particle size and by cylindrical casing volume.</p></li>
+<li><p>Particle <strong>density</strong> is directly obtained from experimental measurement.</p></li>
+<li><p><strong>Maximum elastic spring stiffness</strong> and <strong>restitution coefficient (CoR)</strong> are fixed a priori to limit the minimum collision time and, with it, the overall computation time.</p></li>
+<li><p>The <strong>time step</strong> chosen for the integration of the equations of motion satisfies the usual DEM requirement: dt ≤ tc/50 necessary for granting numerical stability.</p></li>
+<li><p>The <strong>collision time</strong> is obtained by solving the dynamics <a class="reference external" href="https://www.tandfonline.com/doi/abs/10.1080/19648189.2008.9693050">equations of a damped harmonic oscillator</a> of spring stiffness.</p></li>
+<li><p>The <strong>torsion friction coefficient</strong> is set to zero.</p></li>
+<li><p>The <strong>dimensionless plasticity depth</strong> is calculated by a derived <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0032591019310137">equation</a>.</p></li>
+</ul>
+<div class="section" id="particle-shape-is-assumed-to-be-perfectly-spherical">
+<h3>Particle <strong>shape</strong> is assumed to be perfectly spherical<a class="headerlink" href="#particle-shape-is-assumed-to-be-perfectly-spherical" title="Permalink to this headline">¶</a></h3>
+</div>
+<blockquote>
+<div><p><strong>Note</strong>: in their study, the friction coefficient of wall was set to the particles’ counterparts.</p>
+</div></blockquote>
+</div>
+<div class="section" id="performing-laboratory-tests">
+<h2>Performing laboratory tests<a class="headerlink" href="#performing-laboratory-tests" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li></li>
+<li><p><strong>Uniaxial compression test</strong></p>
+<p>A set of 16 prescribed pressure data points are defined and the piston displacement is measured, producing pressure-deformation curves to depict how the bulk deformation is related to the applied pressure.</p>
+</li>
+<li><p><strong>Shear cell test</strong></p>
+<p>In this test, at the same target pressures as in the uniaxial compression test, the piston torque measurement is carried out. The objective is to quantify the magnitude of resistive forces i.e. inter-particle friction and cohesion. Both sliding friction and cohesive stiffness can reproduce this curve and be calibrated.</p>
+</li>
+</ul>
+<div class="section" id="angle-of-repose-aor">
+<h3><strong>Angle of repose (AoR)</strong><a class="headerlink" href="#angle-of-repose-aor" title="Permalink to this headline">¶</a></h3>
+<p>Using this test, the powder heap height and the radius of the powder pile is measured. Consequently the angle of repose is computed. This test is repeated three times.</p>
+</div>
+</div>
+<div class="section" id="numerical-calibration-workflow">
+<h2>Numerical calibration workflow<a class="headerlink" href="#numerical-calibration-workflow" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="angle-of-response">
+<h3>1. Angle of response<a class="headerlink" href="#angle-of-response" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="due-to-the-jamming-the-funnel-by-the-very-cohesive-powder-the-aor-is-numerically-modeled-by-the-draw-down-test-and-the-discrepancies-are-prevented-by-re-calibrating-the-friction-coefficient-in-the-shear-test-it-should-be-noted-that-performing-this-step-to-calculate-a-primary-value-for-the-friction-coefficients-is-crucial-since-it-affects-the-compression-test">
+<h4>Due to the jamming the funnel by the very cohesive powder, the AoR is numerically modeled by the <strong>draw down test</strong> and the discrepancies are prevented by re-calibrating the friction coefficient in the shear test. It should be noted that performing this step to calculate a primary value for the friction coefficients is crucial since it affects the compression test.<a class="headerlink" href="#due-to-the-jamming-the-funnel-by-the-very-cohesive-powder-the-aor-is-numerically-modeled-by-the-draw-down-test-and-the-discrepancies-are-prevented-by-re-calibrating-the-friction-coefficient-in-the-shear-test-it-should-be-noted-that-performing-this-step-to-calculate-a-primary-value-for-the-friction-coefficients-is-crucial-since-it-affects-the-compression-test" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="initialization">
+<h4>1.1. Initialization:<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h4>
+<p>While plastic stiffness has negligible effect on determining the angle of repose, cohesive stiffness should be initialized carefully since its value affects the calibrated sliding friction coefficient (here k_c is the dimensionless cohesive stiffness):</p>
+<ul class="simple">
+<li><p>for α ≤ 30° initially set k_c = 10e−3</p></li>
+<li><p>for 30° ≤ α ≤ 50° initially set k_c = 5*10e−3</p></li>
+<li><p>for α ≥ 50° initially set k_c = 10e-2</p></li>
+</ul>
+</div>
+<div class="section" id="aor-calibration-of-sliding-and-rolling-friction-coefficient-and-cohesion-stiffness">
+<h4>1.2. AoR (Calibration of sliding and rolling friction coefficient and cohesion stiffness)<a class="headerlink" href="#aor-calibration-of-sliding-and-rolling-friction-coefficient-and-cohesion-stiffness" title="Permalink to this headline">¶</a></h4>
+<p>The angle of repose is monotonically dependent on <strong>sliding coefficient of friction</strong>.</p>
+<ul class="simple">
+<li><p>The first two steps are conducted by two first guess -resulting in a boundary which contains the target angle of repose- i.e. μ_s1 = 0.50 and μ_s2 = 0.05, and the new friction coefficient is then set to the average of the previous steps, resulting in a new angle of repose. The relative deviation between the numerically obtained angle of repose and the target experimental value is calculated and compared to a user defined tolerance. Via the bisection method described, the cycle is iterated until it is converged.</p></li>
+<li><p>If the first guess results in angle of repose of smaller than the target value, the <strong>rolling friction coefficient</strong> in increased by an amount of its initial value and the simulations are repeated.</p></li>
+<li><p>If the convergence did not meet, the rolling friction is increased until it either reaches its maximum allowed value or the angle of repose is met.</p></li>
+<li><p>Otherwise, the rolling friction is again set to its initial value, and <strong>cohesion stiffness</strong> is increased by an amount of its initial value and the simulations go on. Note that before each increase in cohesion stiffness, the rolling friction is progressively increased to until the first angle of repose is greater than the targeted value.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="powder-rheometer">
+<h3>2. Powder rheometer<a class="headerlink" href="#powder-rheometer" title="Permalink to this headline">¶</a></h3>
+<p>These simulations are lengthier since numerous data points must be met at once, hence the DEM parameters are tuned several times by an small amount of 0.001 times the actual calibrated variable each 5 timesteps.</p>
+<p>In compression test, the <strong>cohesion stiffness</strong> is tuned to meet the pressure at each compression level.</p>
+<p>During shear test, both <strong>sliding friction</strong> and <strong>cohesion stiffness</strong> are tuned to match the piston torque at each piston pressure.</p>
+<p>Two criteria are exposed: <em><strong>mean relative deviation of calibrated variables</strong></em> and <em><strong>deviation of their mean from the starting value</strong></em>. If the cycle does not converge, a new set of calibration cycle is performed with the new starting value equal to the mean of the calibrated values. The cycle is iterated until one of the following criteria are satisfied:</p>
+<ol class="simple">
+<li><p>Both of the above mentioned deviations are less than a user-defined threshold.</p></li>
+<li><p>The deviation of the mean of the calibrated variables are less than 0.001.</p></li>
+<li><p>The number of iterations reaches a pre-defined maximum number.</p></li>
+</ol>
+<div class="section" id="uniaxial-compression-test-calibration-of-plastic-stiffness">
+<h4>2.1 Uniaxial compression test (Calibration of plastic stiffness)<a class="headerlink" href="#uniaxial-compression-test-calibration-of-plastic-stiffness" title="Permalink to this headline">¶</a></h4>
+<p>For each compression height, the pressure is computed by the summation over the all particles applying force (the vertical component) against the piston. The <strong>plastic stiffness</strong> is increased/decreased accordingly to finally reach the target pressure value.</p>
+</div>
+<div class="section" id="shear-test-re-calibration-of-the-sliding-friction-coefficient-and-cohesion-stiffness">
+<h4>2.2 Shear test (Re-calibration of the sliding friction coefficient and cohesion stiffness)<a class="headerlink" href="#shear-test-re-calibration-of-the-sliding-friction-coefficient-and-cohesion-stiffness" title="Permalink to this headline">¶</a></h4>
+<p>The piston moves downwards to meet the prescribed pressure point and kept constant until the piston is then rotated at the experimental angular velocity and the torque along its axis, is calculated. Before tuning either of these two parameters, a particle rearrangement phase is performed, making sure that most of the particles are relocated by the piston motion.</p>
+<p>Similar to the compression test, during each cycle multiple tuning of the variable is performed, but the sliding friction coefficient is calibrated <em>only</em> during compression and cohesion stiffness only during decompression.</p>
+<blockquote>
+<div><p><strong>Note</strong>: since two parameters are calibrated at the same time, the range of the value sin each cycle should be restricted around the initial value e.g. 10%, to prevent divergence.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Developing a Workflow tool for calibration of DEM models</a>
+    <a class='right-next' id="next-link" href="Use_Case_1_Committing_Numerical_Data_to_Database.html" title="next page">Use Case 1 - Committing Numerical Data to Database (from a Simulation)</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Nazanin Ghods<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
