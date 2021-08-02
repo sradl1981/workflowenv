@@ -3,7 +3,9 @@
 
 title: Calibration Workflow Environment
 author: Nazanin Ghods
-logo: caliperlogo.png
+copyright: 2021. The caliper project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska Curie grant agreement No. 812638.
+ 
+logo: EUCaliper.PNG
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -14,6 +16,11 @@ execute:
 latex:
   latex_documents:
     targetname: book.tex
-
-
+    
+    
+repository:
+  url: https://github.com/n-ghods/workflowenv
+  branch: master
+html:
+  use_edit_page_button: true
 

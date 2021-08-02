@@ -2,16 +2,36 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: landing_page
+
 parts:
-- caption: choosing Experiment sequence
+- caption: Get started
   chapters:
-  - file: Meta-task
+  - file: intro
+    title: Introduction to DEM calibration
+  - file: Overview
+    title: Overview
+  - file: prerequisites
+    title: Prerequisites
 - caption: Use Cases
+  numbered: True
   chapters:
   - file: Use_Case_1_Committing_Numerical_Data_to_Database
+    title: Committing numerical data 
   - file: Use_Case_2_Plotting_and_Reviewing_the_Numerical_Results
-  - file: Use_Case_4_Querying_Numerical_Data_from_Database
-  - file: Use_Case_5.1_preparing_input_for_calibration
-  - file: Use_Case_5.2_Start_Run_and_check_calibration
-  - file: Use_Case_5.3_Commit_calibration_results_to_the_DB
+    title: Plotting and reviewing the data
+  - file: Use_Case_3_Create_store_and_explore_the relational_datanodes
+    title: Working with relational data 
+  - file: Use_Case_4_Calibration_Strategy_(Meta_task)
+    title: Calibration startegy 
+  - file: Use_Case_5_Run_a_Successful_Calibration
+    title: Run a suucessful calibration case
+    sections:
+    - file: Use_Case_5.1_preparing_input_for_calibration
+      title: Preparing input for calibration
+    - file: Use_Case_5.2_Start_Run_and_check_calibration
+      title: Start, Run and Check Calibration
+    - file: Use_Case_5.3_Commit_calibration_results_to_the_DB
+      title: Committing calibration result to the DB
+  - file: Use_Case_6_Run_Simulation_with_calibrated_parameters
+    title: Run DEM simulation with calibrated parameters

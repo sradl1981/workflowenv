@@ -51,8 +51,6 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Use Case 1 - Committing Numerical Data to Database (from a Simulation)" href="Use_Case_1_Committing_Numerical_Data_to_Database.html" />
-    <link rel="prev" title="Developing a Workflow tool for calibration of DEM models" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -71,7 +69,7 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-      <img src="_static/caliperlogo.png" class="logo" alt="logo">
+      <img src="_static/EUCaliper.PNG" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Calibration Workflow Environment</h1>
@@ -84,20 +82,25 @@
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Developing a Workflow tool for calibration of DEM models
+  <a class="reference internal" href="landing_page.html">
+   The Calibration workflow environment
   </a>
  </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
-  choosing Experiment sequence
+  Get started
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Meta-task
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="prerequisites.html">
+   Prerequisites
   </a>
  </li>
 </ul>
@@ -109,32 +112,54 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Use_Case_1_Committing_Numerical_Data_to_Database.html">
-   Use Case 1 - Committing Numerical Data to Database (from a Simulation)
+   1. Committing numerical data
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Use_Case_2_Plotting_and_Reviewing_the_Numerical_Results.html">
-   Use Case 2 - Plotting and reviewing the numerical results from a database entry
+   2. Plotting and reviewing the data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Use_Case_4_Querying_Numerical_Data_from_Database.html">
-   Use Case 4 - Querying numerical data from  data base
+  <a class="reference internal" href="Use_Case_3_Create_store_and_explore_the%20relational_datanodes.html">
+   3. Working with relational data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Use_Case_5.1_preparing_input_for_calibration.html">
-   Use Case 5.1 - Preparing Input for Calibration
+  <a class="reference internal" href="Use_Case_4_Calibration_Strategy_%28Meta_task%29.html">
+   4. Calibration startegy
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Use_Case_5.2_Start_Run_and_check_calibration.html">
-   Use Case 5.2 - Start, Run and Check the Calibration
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Use_Case_5_Run_a_Successful_Calibration.html">
+   5. Run a suucessful calibration case
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Use_Case_5.1_preparing_input_for_calibration.html">
+     5.1. Preparing input for calibration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Use_Case_5.2_Start_Run_and_check_calibration.html">
+     5.2. Start, Run and Check Calibration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Use_Case_5.3_Commit_calibration_results_to_the_DB.html">
+     5.3. Committing calibration result to the DB
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Use_Case_5.3_Commit_calibration_results_to_the_DB.html">
-   Use Case 5.3 - Commit Calibration Results to the DB
+  <a class="reference internal" href="Use_Case_6_Run_Simulation_with_calibrated_parameters.html">
+   6. Run DEM simulation with calibrated parameters
   </a>
  </li>
 </ul>
@@ -188,6 +213,18 @@
 </div>
 
             <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/n-ghods/workflowenv/edit/master/Meta-task.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
 
             <!-- Full screen (wrap in <a> to have style consistency -->
 
@@ -614,8 +651,6 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Developing a Workflow tool for calibration of DEM models</a>
-    <a class='right-next' id="next-link" href="Use_Case_1_Committing_Numerical_Data_to_Database.html" title="next page">Use Case 1 - Committing Numerical Data to Database (from a Simulation)</a>
 
         </div>
         
@@ -627,7 +662,7 @@
         
           By Nazanin Ghods<br/>
         
-            &copy; Copyright 2021.<br/>
+            &copy; Copyright 2021. The caliper project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska Curie grant agreement No. 812638..<br/>
       </p>
     </div>
   </footer>
